@@ -35,11 +35,16 @@ Java Script
 
 Programming Challenges
 There were many challenges which I faced during this task:
-
--
+- The project was asked to be done in notepad, debugging and solving the problem was an issue
+- The enemy following the user's square, for a long time the enemy square would teleport to the user's position not follow it.
+So it would always catch it
+- Being able to implement the score feature
+- Being able to implement a high-score list
+- Being able to implement the three lives for the user
 
 Constructing And Implementing My Code
 Think of this as the method. How will you go about building your program?
+Firstly, some research needed to be done to get the feel of how my code would look like.https://www.w3schools.com/
 
 Algorithms
 Explanation of the algorithms behind your program
