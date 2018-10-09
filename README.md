@@ -44,7 +44,7 @@ So it would always catch it
 
 Constructing And Implementing My Code
 Think of this as the method. How will you go about building your program?
-Firstly, some research needed to be done to get the feel of how my code would look like.https://www.w3schools.com/
+Firstly, some research needed to be done to get the feel of how my code would look like. I used https://www.w3schools.com/ to help me understand further what was needed to be done. The program will be broken down in chunks, the canvas, the user's square and the enemy's square. Firstly, i will make the canvas, this is important because this is the area that the game is played in. Secondly, I will go about building the user square. Then I will try to add movement to the user's square by adding mouse movement, so when the mouse moves the user's square moves aswell. After, I will go onto build the enemy's square, here I will need this square to follow the user's square. After the game should restart when the two squares touch other. 
 
 Algorithms
 Explanation of the algorithms behind your program
@@ -53,6 +53,8 @@ Coding Standards
 Standard for the code you will be writting
 
 # V. Research
+
+This is the website I used for my research https://www.w3schools.com/. 
 # VI. Project Management
 Burndown Chart
 Example Burndown Chart
