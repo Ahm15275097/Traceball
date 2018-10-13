@@ -47,7 +47,8 @@ Think of this as the method. How will you go about building your program?
 Firstly, some research needed to be done to get the feel of how my code would look like. I used https://www.w3schools.com/ to help me understand further what was needed to be done. The program will be broken down in chunks, the canvas, the user's square and the enemy's square. Firstly, i will make the canvas, this is important because this is the area that the game is played in. Secondly, I will go about building the user square. Then I will try to add movement to the user's square by adding mouse movement, so when the mouse moves the user's square moves aswell. After, I will go onto build the enemy's square, here I will need this square to follow the user's square. After the game should restart when the two squares touch other. 
 
 Algorithms
-Explanation of the algorithms behind your program
+
+The algorithm in my program is to do with the enemy piece. When the user moves the game piece the AI will identify where the game piece is and will move towards it. When the enemy piece is on the left of the game piece the enemy piece will move right and when it is on the right of the game piece it will move left. when the enemy piece is above the game piece it will move down and it will move up if it is below it. This will move at a constant speed.
 
 Coding Standards
 Standard for the code you will be writting
