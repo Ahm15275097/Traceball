@@ -16,8 +16,10 @@ Non-Functional Requirements
 - The user will have three lives
 
 User Stories
+
+- As a 
 - As a player I would like to be able to see my score on the screen. Also when the game is over I would like to see a highscore list, so that I can improve on my own score or try to beat people who played before me.
-- As a player I would
+ 
 
 How We Addressed The Requirements
 A plan was set to have a score that the user can see and a highscore list that would come at the end of the game.  
@@ -29,9 +31,13 @@ A game which will be played in a web browser
 # IV. Technical Details
 
 Platform
+
+
 HTML Browser
 
 Programming Language/Enviroment
+
+
 Java Script 
 
 Programming Challenges
@@ -54,6 +60,8 @@ The algorithm in my program is to do with the enemy piece. When the user moves t
 Coding Standards
 Standard for the code you will be writting
 
+
+
 # V. Research
 
 This is the website I used for my research https://www.w3schools.com/. 
@@ -71,3 +79,4 @@ Flowchart showing how the program will work
 
 Functions
 Descriptions of functions given on flowchart
+
