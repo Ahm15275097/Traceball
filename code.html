@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content=
+    "width=device-width, initial-scale=1.0" />
+    <style type="text/css">
+
+    canvas {
+    border:1px solid #d3d3d3;
+    background-color: #f1f1f1;
+    }
+    
+    </style>
+    <title></title>
+  	</head>
+  	<body onload="startGame()">   
+    	<script type="text/javascript">
+
+// Here I am setting up the variables for each piece 
+    	var myGamePiece;
+	var myEnemyPiece;
+	var myGameArea;
+
+
+    function startGame() {
+        myGamePiece = new component(30, 30, "red", 100, 100); 		// Here I have made a component for the user 
+        myEnemyPiece = new componentEnemy(10, 10, "blue", 0, 0);   	// Here I have made the component for the enemy 
+        myGameArea.start();
+    }
+
+// Here i am setting up the canvas
+
+    myGameArea = {
+    canvas : document.createElement("canvas"),
+    start : function() {
+        this.canvas.width = 1250;
+        this.canvas.height = 550;
+        this.canvas.style.cursor = "none"; 					// This line hides the mouse cursor
+        this.context = this.canvas.getContext("2d");
+        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+	this.frameNo = 0;
+        this.interval = setInterval(updateGameArea, 10); 			// This is the speed at thich the gamepiece will move
+        this.interval = setInterval(moveEnemyPiece, 10); 			// This is the speed at which the enemy will move       
+        window.addEventListener('mousemove', function (e) { 			// this is what listens out for mousemovement 
+         	myGameArea.x = e.pageX;
+            	myGameArea.y = e.pageY;
+        })
+    }, 
+    	clear : function(){
+        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    	}
+    }
+
+    	function component(width, height, color, x, y) {
+    	this.width = width;
+    	this.height = height;
+	    this.speedX = 0;
+    	this.speedY = 0; 
+    	this.x = x;
+    	this.y = y;    
+    	this.update = function() {
+    	ctx = myGameArea.context;
+    	ctx.fillStyle = color;
+    	ctx.fillRect(this.x, this.y, this.width, this.height);
+    	}
+    }
+
+    	function componentEnemy(width, height, color, x, y) {
+    	this.width = width;
+    	this.height = height;
+	this.speedX = 0;
+    	this.speedY = 0;    
+    	this.x = x;
+    	this.y = y;    
+    	this.update = function() {
+    	ctx = myGameArea.context;
+    	ctx.fillStyle = color;
+    	ctx.fillRect(this.x, this.y, this.width, this.height);
+    	}
+    }
+
+
+   	function updateGameArea() {
+	myGameArea.clear();
+    
+	if (myGameArea.x && myGameArea.y) {
+   	myGamePiece.x = myGameArea.x;
+  	myGamePiece.y = myGameArea.y;
+       
+  	}
+	if ( (myEnemyPiece.x == myGamePiece.x) && (myEnemyPiece.y == myGamePiece.y)  ){
+		alert("GAME OVER - You've been caught");
+    		document.location.reload();
+	}
+        myGamePiece.update();
+        myEnemyPiece.update();
+    	}
+
+
+    	function moveEnemyPiece() {    
+
+        if (myGamePiece.x < myEnemyPiece.x) {			// Depending on where the GamePiece the enemy piece will move up or down
+		myEnemyPiece.x = myEnemyPiece.x -1		
+	}						
+	else {
+		myEnemyPiece.x = myEnemyPiece.x +1		 
+	}
+
+        if (myGamePiece.y < myEnemyPiece.y) {			// Depending on where the GamePiece the enemy piece will move left or right 
+		myEnemyPiece.y = myEnemyPiece.y -1
+	}
+	else {
+		myEnemyPiece.y = myEnemyPiece.y +1
+	}
+
+    	}
+
+
+
+
+   
+    </script>
+    <p>
+      Move the cursor inside the canvas to move the red square.
+    </p>
+  </body>
+</html>
