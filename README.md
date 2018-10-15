@@ -69,13 +69,19 @@ This is the website I used for my research https://www.w3schools.com/.
 Burndown Chart
 
 ![Burndown](https://i.imgur.com/V2JQ8T8.png)
+
+
 Chart showing the completion of user stories over time
 
 User Stories Tracking Chart (Which Stories Have Been Completed)
 Table showing user stories with weighting, due date and completion state
 
 Flowchart
-Flowchart showing how the program will work
+
+
+![Flowchart](https://i.imgur.com/Dm1oKuB.png)
+
+
 
 Functions
 Descriptions of functions given on flowchart
