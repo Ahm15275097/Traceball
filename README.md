@@ -67,8 +67,8 @@ Standard for the code you will be writting
 This is the website I used for my research https://www.w3schools.com/. 
 # VI. Project Management
 Burndown Chart
-file:///C:/Users/Toshiba/Pictures/burndown.PNG
 
+![Burndown](https://i.imgur.com/V2JQ8T8.png)
 Chart showing the completion of user stories over time
 
 User Stories Tracking Chart (Which Stories Have Been Completed)
