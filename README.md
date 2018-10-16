@@ -95,7 +95,7 @@ Chart showing the completion of user stories over time
 Flowchart
 
 
-![Flowchart](https://i.imgur.com/Dm1oKuB.png)
+![Flowchart](https://i.imgur.com/LGVcQL3.png)
 
 
 
