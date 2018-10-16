@@ -14,23 +14,24 @@ Non-Functional Requirements
 - The colour of the Enemy's square should be red 
 - There will be a score displayed, the score will go up by one for every second the enemy square doesn't touch the user's square
 - The user will have three lives
+- The size of both squares should be the same
 
 User Stories
 
-- () As a player I would like to see the the canvas and the 2 squares 
-- () As a player I would like to see my square move to the location I have chosen
-- () As a player I would like to see the enemy piece move towards the game piece
-- () As a player I would like the game to stop once the 2 squares come into contact 
-- () As a player I would like to be able to see my score on the screen
-- () As a player I would like to see a highscore list 
+- (1) As a player I would like to see the the canvas and the 2 squares 
+- (2) As a player I would like to see my square move to the location I have chosen
+- (3) As a player I would like to see the enemy piece move towards the game piece
+- (4) As a player I would like the game to stop once the 2 squares come into contact 
+- (5) As a player I would like to be able to see my score on the screen
+- (6) As a player I would like to see a highscore list 
  
 
 How We Addressed The Requirements
-A plan was set to have a score that the user can see and a highscore list that would come at the end of the game.  
+A plan was set to have all the requirments that were asked for. Having a canvas and 2 squares were important, so this was a good place to start.   
 
 # III. Genre
 
-A game which will be played in a web browser 
+A reaction game
 
 # IV. Technical Details
 
@@ -55,7 +56,7 @@ So it would always catch it
 
 Constructing And Implementing My Code
 Think of this as the method. How will you go about building your program?
-Firstly, some research needed to be done to get the feel of how my code would look like. I used https://www.w3schools.com/ to help me understand further what was needed to be done. The program will be broken down in chunks, the canvas, the user's square and the enemy's square. Firstly, i will make the canvas, this is important because this is the area that the game is played in. Secondly, I will go about building the user square. Then I will try to add movement to the user's square by adding mouse movement, so when the mouse moves the user's square moves aswell. After, I will go onto build the enemy's square, here I will need this square to follow the user's square. After the game should restart when the two squares touch other. 
+Firstly, some research needed to be done to get the feel of how my code would look like. https://www.w3schools.com/ was used to help understand further what was needed to be done. The program will be broken down in chunks, the canvas, the user's square and the enemy's square. Firstly, the canvas will be made, this is important because this is the area that the game is played in. Secondly, I will go about building the user square. Then I will try to add movement to the user's square by adding mouse movement, so when the mouse moves the user's square moves aswell. After, I will go onto build the enemy's square, here I will need this square to follow the user's square. After the game should restart when the two squares touch other. 
 
 Algorithms
 
@@ -63,12 +64,24 @@ The algorithm in my program is to do with the enemy piece. When the user moves t
 
 Coding Standards
 
+- In this program all the curly brackets are opened at the same place
+- All the code is indented in the same way
+- 
+
+
+IDE 
+
+
+An IDE was not used in the creation of this program, as the program was created in notepad. 
+
 
 
 
 # V. Research
 
-This is the website I used for my research https://www.w3schools.com/. 
+h https://www.w3schools.com/. 
+
+
 # VI. Project Management
 Burndown Chart
 
@@ -76,9 +89,8 @@ Burndown Chart
 
 
 Chart showing the completion of user stories over time
+![User Stories tracking Chart](https://i.imgur.com/kloPwQO.png)
 
-User Stories Tracking Chart (Which Stories Have Been Completed)
-Table showing user stories with weighting, due date and completion state
 
 Flowchart
 
