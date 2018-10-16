@@ -17,8 +17,12 @@ Non-Functional Requirements
 
 User Stories
 
-- As a 
-- As a player I would like to be able to see my score on the screen. Also when the game is over I would like to see a highscore list, so that I can improve on my own score or try to beat people who played before me.
+- () As a player I would like to see the the canvas and the 2 squares 
+- () As a player I would like to see my square move to the location I have chosen
+- () As a player I would like to see the enemy piece move towards the game piece
+- () As a player I would like the game to stop once the 2 squares come into contact 
+- () As a player I would like to be able to see my score on the screen
+- () As a player I would like to see a highscore list 
  
 
 How We Addressed The Requirements
@@ -58,7 +62,7 @@ Algorithms
 The algorithm in my program is to do with the enemy piece. When the user moves the game piece the AI will identify where the game piece is and will move towards it. When the enemy piece is on the left of the game piece the enemy piece will move right and when it is on the right of the game piece it will move left. when the enemy piece is above the game piece it will move down and it will move up if it is below it. This will move at a constant speed.
 
 Coding Standards
-Standard for the code you will be writting
+
 
 
 
