@@ -94,10 +94,13 @@ Chart showing the completion of user stories over time
 Flowchart
 
 
-![Flowchart](https://i.imgur.com/LGVcQL3.png)
+![Flowchart](https://i.imgur.com/7WpAWUJ.png)
 
 
 
 Functions
 Descriptions of functions given on flowchart
+
+
+
 
