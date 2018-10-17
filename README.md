@@ -102,5 +102,12 @@ Functions
 Descriptions of functions given on flowchart
 
 
+Here is the code which displays the components
+
+The first image shows the creation of the compnents and the second image places the components into the canvas.
+
+
+
+
 
 
