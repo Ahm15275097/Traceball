@@ -59,7 +59,7 @@ Think of this as the method. How will you go about building your program?
 Firstly, some research needed to be done to get the feel of how my code would look like. https://www.w3schools.com/ was used to help understand further what was needed to be done. The program will be broken down in chunks, the canvas, the user's square and the enemy's square. Firstly, the canvas will be made, this is important because this is the area that the game is played in. Secondly, I will go about building the user square. Then I will try to add movement to the user's square by adding mouse movement, so when the mouse moves the user's square moves aswell. After, I will go onto build the enemy's square, here I will need this square to follow the user's square. After the game should restart when the two squares touch other. 
 
 Algorithms
-When the user moves the mouse the game piece will move the enemy piece will listen out to the coordinates and will move towards it. When the enemy piece is on the left of the game piece the enemy piece will move right and when it is on the right of the game piece it will move left. When the enemy piece is above the game piece it will move down and it will move up if it is below it. This will keep happening until the 2 squares contact each other, once this happens the game will stop. 
+The game will start when the page has loaded, when the user moves the mouse the game piece will move the enemy piece will listen out to the coordinates and will move towards it. When the enemy piece is on the left of the game piece the enemy piece will move right and when it is on the right of the game piece it will move left. When the enemy piece is above the game piece it will move down and it will move up if it is below it. This will keep happening until the 2 squares contact each other, once this happens the game will stop. 
 
 Coding Standards
 
@@ -163,6 +163,17 @@ Lastly, when the two pieces come into contact the game must stop and a game over
 		  }
     
 The code will tell the program to stop once the x and y coordinates are all at the same location, it will then reload the page after a game over message. 
+
+
+
+
+# VI. Evaluation 
+
+For me this project was a success, I have managed to create a fully functional program in 2 weeks. This program has all the main requirements that allows the user to play the game. Getting the user's piece and enemy piece to work the way they were suppose to gave me great satisfaction, this is because alot of reasearch and understanding went into to finding out how they would work. 
+
+The game was created in notepad which I found very difficult, I have a basic understanding of programming but coding without the use of an IDE was a first for me. Coding without the use of an IDE is challenging because there wasn't an error message to tell you where you have gone wrong or what syntax the code doesn't understand. To make this right I had to run it in a browser and use the console there to find my mistakes and correct it. This was very time consuming. 
+
+I would have liked to add a score and lives to the game but unfortunately I ran out of time. With more time I would have like to add many more features. 
 
 
      
