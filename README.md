@@ -49,7 +49,7 @@ Programming Challenges
 There were many challenges which I faced during this task:
 - The project was asked to be done in notepad, debugging and solving the problem was an issue
 - The enemy following the user's square, for a long time the enemy square would teleport to the user's position not follow it.
-So it would always catch it
+  So it would always catch it
 - Being able to implement the score feature
 - Being able to implement a high-score list
 - Being able to implement the three lives for the user
@@ -64,8 +64,8 @@ When the user moves the mouse the game piece will move the enemy piece will list
 Coding Standards
 
 - In this program all the curly brackets are opened at the same place
-- All the code is indented the same 
-- 
+- All the code is indented the same
+- Obvious comments were avoided 
 
 
 IDE 
@@ -102,9 +102,79 @@ Functions
 Descriptions of functions given on flowchart
 
 
-Here is the code which displays the components
+1. Display user's piece, enemy piece and canvas 
+ 
+Here is the code which displays the canvas content and colour of the border. 
+    
+    canvas {
+    border:1px solid #d3d3d3;
+    background-color: #f1f1f1;
+    }
+    
+The next line of code just get the canvas and can give it things like width, height and style. 
+    
+    
+    canvas : document.createElement("canvas")
+    
+The next step was to create the components. The game piece is the component that the user controls and the enemy piece is the component the AI controls. When creating the components some specification would need to be given.  The Width, height, colour and the x and y coordinates.
+    
+    myGamePiece = new component(50, 50, " lightgreen", 100, 100); 			 
+    myEnemyPiece = new componentEnemy(25, 25, "red", 0, 0); 
+Functions needed to be created to display the components into the canvas. 
 
-The first image shows the creation of the compnents and the second image places the components into the canvas.
+
+2. Enemy's square will follow the user's square
+
+Next the AI will need to locate where the game piece and travel to that location.
+
+    
+		if (myGamePiece.x < myEnemyPiece.x) {			
+		myEnemyPiece.x = myEnemyPiece.x -1		
+		}						
+		else {
+		myEnemyPiece.x = myEnemyPiece.x +1		 
+		}
+The code above will get the enemy piece to move right or left depending on where the game piece is by following its x coordinates.
+
+		if (myGamePiece.y < myEnemyPiece.y) {			 
+		 myEnemyPiece.y = myEnemyPiece.y -1
+		 }
+		 else {
+		 myEnemyPiece.y = myEnemyPiece.y +1
+	 	}
+The code above will get the enemy piece to move up or down depending on where the game piece is by following its y coordinates.
+   
+3. The user's square will move in the direction they have chosen
+   
+Now the user's square will listen out for mouse movement from the user. The code below shows what will make this happen. 
+   
+    window.addEventListener('mousemove', function (e) { 			 
+         	   myGameArea.x = e.pageX;
+            	myGameArea.y = e.pageY;
+        })
+        
+4. Stop the game when game piece has been caught
+
+Lastly, when the two pieces come into contact the game must stop and a game over message must be displayed. Unforunately I did not include lives in this game. 
+
+    if ( (myEnemyPiece.x == myGamePiece.x) && (myEnemyPiece.y == myGamePiece.y)  ){
+		  alert("GAME OVER - You've been caught");
+    document.location.reload();
+		  }
+    
+The code will tell the program to stop once the x and y coordinates are all at the same location, it will then reload the page after a game over message. 
+
+
+     
+   
+    
+
+
+    
+    
+    
+    
+    
 
 
 
