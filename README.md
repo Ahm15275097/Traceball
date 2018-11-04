@@ -55,10 +55,13 @@ There were many challenges which I faced during this task:
 - Being able to implement the three lives for the user
 
 Constructing And Implementing My Code
-Think of this as the method. How will you go about building your program?
+
+
 Firstly, some research needed to be done to get the feel of how my code would look like. https://www.w3schools.com/ was used to help understand further what was needed to be done. The program will be broken down in chunks, the canvas, the user's square and the enemy's square. Firstly, the canvas will be made, this is important because this is the area that the game is played in. Secondly, I will go about building the user square. Then I will try to add movement to the user's square by adding mouse movement, so when the mouse moves the user's square moves aswell. After, I will go onto build the enemy's square, here I will need this square to follow the user's square. After the game should restart when the two squares touch other. 
 
 Algorithms
+
+
 The game will start when the page has loaded, when the user moves the mouse the game piece will move the enemy piece will listen out to the coordinates and will move towards it. When the enemy piece is on the left of the game piece the enemy piece will move right and when it is on the right of the game piece it will move left. When the enemy piece is above the game piece it will move down and it will move up if it is below it. This will keep happening until the 2 squares contact each other, once this happens the game will stop. 
 
 Coding Standards
