@@ -66,9 +66,20 @@ The game will start when the page has loaded, when the user moves the mouse the 
 
 Coding Standards
 
-- In this program all the curly brackets are opened at the same place
-- All the code is indented the same
-- Obvious comments were avoided 
+- In this program all the braces were placed at the same position in the code, this is shown in the image below. 
+
+![](https://i.imgur.com/Y1VO9vg.png)
+
+
+- All the code is indented inside a new block of code
+
+
+![](https://i.imgur.com/x02pLLd.png)
+
+- Came casing was used when creating new variables, as shown below
+
+
+![](https://i.imgur.com/a3mf42d.png)
 
 
 IDE 
