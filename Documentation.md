@@ -76,7 +76,7 @@ Coding Standards
 
 ![](https://i.imgur.com/x02pLLd.png)
 
-- Came casing was used when creating new variables, as shown below
+- Camel casing was used when creating new variables, as shown below
 
 
 ![](https://i.imgur.com/a3mf42d.png)
