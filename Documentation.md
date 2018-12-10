@@ -64,7 +64,7 @@ Algorithms
 
 The game will start when the page has loaded, when the user moves the mouse the game piece will move the enemy piece will listen out to the coordinates and will move towards it. When the enemy piece is on the left of the game piece the enemy piece will move right and when it is on the right of the game piece it will move left. When the enemy piece is above the game piece it will move down and it will move up if it is below it. This will keep happening until the 2 squares contact each other, once this happens the game will stop. 
 
-Coding Standards
+# Coding Standards
 
 - In this program all the braces were placed at the same position in the code, this is shown in the image below. 
 
